@@ -10,7 +10,7 @@ The main goal of this research is to collect large scale datasets in different l
 - Create benchmark/baseline to allow other researchers to build more emotion-aware automated systems
 - Train large models that support multilingual emotion classification. 
 - How does the use emotion data compare to randomly collected data for training oriented language models
-- What new can we learn via rigurous analyses?
+- What new can we learn via rigorous analyses?
 
 All other project details and progress are documented [here](https://paper.dropbox.com/doc/Emotion-Analysis-Research--A0dJ2zW7Viie9yhKbTZ5bRPgAQ-HKX3hWJXjq40l3L5AWRul).
 
