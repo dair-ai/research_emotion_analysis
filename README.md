@@ -1,3 +1,22 @@
 # Multilingual Emotion Analysis Research
 
-Coming soon!
+### About the Project
+The main goal of this research is to collect large scale datasets in different languages for emotion analysis research. Most NLP models are tested on relatively easy sentiment classification tasks. To achieve robustness and enable more emotion-aware machine learning systems, it is required to scale the task and add more complexity as is the nature of emotion. Have such dataset will not only enable other researchers to leverage it for other types of relevant research (emotion-aware conversational AI, multimodal emotion research, multilingual emotion-based research, etc.) but also encourage researchers in the NLP field to test their models on more robust and complex tasks. Availability is key. We propose to collect large amounts of data in the different languages and provide it as a benchmark with some baselines.
+
+### Research Objectives
+
+- Collect massive amounts of data for emotion analysis research.
+- Collect emotion data for different languages and build multilingual classifier systems
+- Create benchmark/baseline to allow other researchers to build more emotion-aware automated systems
+- Train large models that support multilingual emotion classification. 
+- How does the use emotion data compare to randomly collected data for training oriented language models
+- What new can we learn via rigurous analyses?
+
+### Data Gathering
+Google Sheet: https://docs.google.com/spreadsheets/d/1ie18mQ2Te-ptxFfbrnYKp-L4sOdvm2tHc8LL4RoQ2B4/edit?usp=sharing
+
+### How to Contribute?
+- You can check out our [Project page](https://github.com/orgs/dair-ai/projects/8) to see all the ongoing tasks/issue related to this research project.
+- You can ask anything related to this project in our [Slack group](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g). 
+- Slack channel: #research_emotion_analysis
+
