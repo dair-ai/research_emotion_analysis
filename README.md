@@ -15,7 +15,7 @@ The main goal of this research is to collect large scale datasets in different l
 All other project details and progress are documented [here](https://paper.dropbox.com/doc/Emotion-Analysis-Research--A0dJ2zW7Viie9yhKbTZ5bRPgAQ-HKX3hWJXjq40l3L5AWRul).
 
 ### How to Contribute?
-- You can check out our [Project page](https://github.com/orgs/dair-ai/projects/8) to see all the ongoing tasks/issue related to this research project. Lookout for the main `research_emotion_analysis` tag. `good first issue` are good issues to get started with.
+- You can check out our [Project page](https://github.com/orgs/dair-ai/projects/8) to see all the ongoing tasks/issue related to this research project. Lookout for the main `research_emotion_analysis` tag. Issues with the `good first issue` tag are good issues to get started with.
 - You can also just check the [issues tab](https://github.com/dair-ai/research_emotion_analysis/issues).
 - You can ask anything related to this project in our [Slack group](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g). 
 - Slack channel: #research_emotion_analysis
