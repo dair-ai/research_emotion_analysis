@@ -12,6 +12,8 @@ The main goal of this research is to collect large scale datasets in different l
 - How does the use emotion data compare to randomly collected data for training oriented language models
 - What new can we learn via rigurous analyses?
 
+All other project details and progress are documented [here](https://paper.dropbox.com/doc/Emotion-Analysis-Research--A0dJ2zW7Viie9yhKbTZ5bRPgAQ-HKX3hWJXjq40l3L5AWRul).
+
 ### How to Contribute?
 - You can check out our [Project page](https://github.com/orgs/dair-ai/projects/8) to see all the ongoing tasks/issue related to this research project.
 - You can ask anything related to this project in our [Slack group](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g). 
