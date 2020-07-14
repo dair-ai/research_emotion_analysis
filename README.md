@@ -1,22 +1,70 @@
-# Multilingual Emotion Analysis Research
+## Twitter Crawler
+The following crawler helps you to stream and store tweets from the [Twitter API](https://developer.twitter.com/en/docs.html) based on hashtag keywords. The keyword basically play the role of a filter, where the tweets collected are only those that contain any of the keywords in the list provided. 
 
-### About the Project
-The main goal of this research is to collect large scale datasets in different languages for emotion analysis research. Most NLP models are tested on relatively easy sentiment classification tasks. To achieve robustness and enable more emotion-aware machine learning systems, it is required to scale the task and add more complexity as is the nature of emotion. Have such dataset will not only enable other researchers to leverage it for other types of relevant research (emotion-aware conversational AI, multimodal emotion research, multilingual emotion-based research, etc.) but also encourage researchers in the NLP field to test their models on more robust and complex tasks. Availability is key. We propose to collect large amounts of data in the different languages and provide it as a benchmark with some baselines.
+---
+## How To Make it Work!
+- First, you need a database to store your tweets. The crawler already supports the ability to store tweets in both Elasticsearch and MongoDB. On that note, the crawler assumes that you have installed all the necessary libraries and software to stream and store. The crawler stores tweets in tthe following `json` format: 
 
-### Research Objectives
+    `{'hashtags': [], 'tweet_id': '1052497792675926022', 'created_at': 'Wed Oct 17 09:53:22 +0000 2018', 'text': 'I wanawanawanawanawanawanawanawanawanawana be a super star be a be a super star'}`
 
-- Collect massive amounts of data for emotion analysis research.
-- Collect emotion data for different languages and build multilingual classifier systems
-- Create benchmark/baseline to allow other researchers to build more emotion-aware automated systems
-- Train large models that support multilingual emotion classification. 
-- How does the use emotion data compare to randomly collected data for training oriented language models
-- What new can we learn via rigorous analyses?
+- Then you can configure the `config.py` file and provide the necessary configurations to store you data. You can also provide the keywords you will search for on the Twitter Streaming API.
 
-All other project details and progress are documented [here](https://paper.dropbox.com/doc/Emotion-Analysis-Research--A0dJ2zW7Viie9yhKbTZ5bRPgAQ-HKX3hWJXjq40l3L5AWRul).
+- The following are the configurations you need to add yourself:
+    - MongoDB settings:
+    ```python
+        MONGODB = dict(
+            hostname = '<hostname>',
+            port = 27017,
+            db = '<db_name>',
+            collection = '<collection_name>'
+        )
+    ```
+    - Twitter API keys (you can get your own [here](https://apps.twitter.com/))
+    ```python
+        TWITTER = dict(
+            consumer_key = '<consumer_key>',
+            consumer_secret = '<consumer_secret>',
+            access_token = '<access_token>',
+            access_secret = '<access_secret>'
+        )
+    ```
+    - Elasticsearch settings:
+    ```python
+        ELASTICSEARCH = dict(
+            hostname = "localhost:9200",
+            new_hostname = "localhost:9200",
+            index = "tweets_en",
+            type = "doc_en"
+        )
+    ```
+    - Keyword filters:
+    ```python
+    KEYWORDS = dict( 
+        joy = ["#hashtag1", "#hashtag2",...],
+        trust = ["#hashtag1", "#hashtag2",...],
+        fear = ["#hashtag1", "#hashtag2",...],
+        surprise = ["#hashtag1", "#hashtag2",...],
+        sadness = ["#hashtag1", "#hashtag2"...],
+        disgust = ["#hashtag1", "#hashtag2",...],
+        anger = ["#hashtag1", "#hashtag2",...],
+        anticipation = ["#hashtag1", "#hashtag2",...],
+        other = ["#hashtag1", "#hashtag2",...]
+    )
+    ```
 
-### How to Contribute?
-- You can check out our [Project page](https://github.com/orgs/dair-ai/projects/8) to see all the ongoing tasks or issues related to this research project. Lookout for the main `research_emotion_analysis` tag. Issues with the `good first issue` tag are good tasks to get started with.
-- You can also just check the [issues tab](https://github.com/dair-ai/research_emotion_analysis/issues).
-- You can ask anything related to this project in our [Slack group](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g). 
-- Slack channel: #research_emotion_analysis
+- After you have configured the file above, you should be ready to run the script, using the following command: 
 
+    `python twitter_crawler.py`
+    
+- Pay attention to the `twitter_crawler.py` script as currently it is only set to store tweets on a MongoDB. You can change these settings in the script by yourself. 
+
+---
+## Citation
+
+If you are using this crawler for research purposes please include the following paper citation:
+
+Elvis Saravia, Hsien-Chi Toby Liu, Yi-Shin Chen, DeepEmo: Learning and Enriching Pattern-Based Emotion Representations [arXiv:1804.08847](https://arxiv.org/abs/1804.08847), 2018.
+
+---
+## Author
+[Elvis Saravia](https://twitter.com/omarsar0)
