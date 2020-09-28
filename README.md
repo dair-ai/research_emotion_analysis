@@ -17,5 +17,5 @@ All other project details and progress are documented [here](https://paper.dropb
 ### How to Contribute?
 - You can check out our [Project page](https://github.com/orgs/dair-ai/projects/8) to see all the ongoing tasks or issues related to this research project. Lookout for the main `research_emotion_analysis` tag. Issues with the `good first issue` tag are good tasks to get started with.
 - You can also just check the [issues tab](https://github.com/dair-ai/research_emotion_analysis/issues).
-- You can ask anything related to this project in our [Slack group](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g). 
+- You can ask anything related to this project in our Slack group. Feel free to reach out to me on [Twitter](https://twitter.com/omarsar0) for an invite to our Slack group.
 - Slack channel: #research_emotion_analysis
