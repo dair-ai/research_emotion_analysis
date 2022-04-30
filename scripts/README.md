@@ -65,6 +65,16 @@ If you are using this crawler for research purposes please include the following
 
 Elvis Saravia, Hsien-Chi Toby Liu, Yi-Shin Chen, DeepEmo: Learning and Enriching Pattern-Based Emotion Representations [arXiv:1804.08847](https://arxiv.org/abs/1804.08847), 2018.
 
+```
+@inproceedings{saravia2018carer,
+  title={Carer: Contextualized affect representations for emotion recognition},
+  author={Saravia, Elvis and Liu, Hsien-Chi Toby and Huang, Yen-Hao and Wu, Junlin and Chen, Yi-Shin},
+  booktitle={Proceedings of the 2018 conference on empirical methods in natural language processing},
+  pages={3687--3697},
+  year={2018}
+}
+```
+
 ---
 ## Author
 [Elvis Saravia](https://twitter.com/omarsar0)
